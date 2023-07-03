@@ -1,6 +1,6 @@
-#Trabajo Práctico | Mercado Liebre 
+# Trabajo Práctico | Mercado Liebre 
 
-###Agustin Gabriel Benitez | Comisión N°20
+## Agustin Gabriel Benitez | Comisión N°20
 
 
 [Estructura](https://github.com/AgusBenitez99/mercadoLiebre/tree/structure)
