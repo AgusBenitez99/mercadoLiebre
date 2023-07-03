@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/e5b61c4010.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Mercado liebre</title>
   </head>
   <body>
@@ -11,9 +12,9 @@
       <img src="/img/logo-mercado-liebre.svg" alt="" />
       <form action="">
         <input type="text" placeholder="Buscar productos, marca">
-        <button><i class="far fa-search"></i></button>
+        <button><i class="fas fa-search"></i></button>
       </form>
-      <h4>Comprá en cuotas y sin tarjeta de crédito</h4>
+      <div><h4><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h4></div>
       <nav>
         <ul>
           <li><a href="/">Ofertas</a></li>
@@ -22,13 +23,16 @@
           <li><a href="/">Ayuda</a></li>
         </ul>
       </nav>
-      <nav>
+      <nav class="menu">
         <ul>
-          <li><a href="/">Crea tu cuenta</a></li>
-          <li><a href="/">Ingresa</a></li>
-          <li><a href="/">Mis compras</a></li>
+          <li><a href="/">Crea tu cuenta</a><i class="far fa-id-card"></i></li>
+          <li><a href="/">Ingresa</a><i class="fa-solid fa-right-to-bracket"></i></li>
+          <li><a href="/">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
         </ul>
       </nav>
+      <div class="burger-menu">
+        <i class="fas fa-bars"></i>
+        </div>
     </header>
     <main>
       <section>
@@ -89,6 +93,7 @@
     <footer>
       <section>
         <article>
+          <i class="fas fa-credit-card"></i>
           <h3>Pagá con tarjeta o en efectivo</h3>
           <p>
             Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
@@ -96,6 +101,7 @@
           </p>
         </article>
         <article>
+          <i class="fas fa-gift"></i>
           <h3>Envío gratis desde $ 2.500</h3>
           <p>
             Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
@@ -103,17 +109,19 @@
           </p>
         </article>
         <article>
+          <i class="fas fa-user-shield"></i>
           <h3>Seguridad, de principio a fin</h3>
           <p>
             ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
             porque estás siempre protegid@.
           </p>
         </article>
-        <article>
-          <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
-          
-        </article>
+        
       </section>
+      <article class="copyright">
+        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        
+      </article>
     </footer>
   </body>
 </html>
