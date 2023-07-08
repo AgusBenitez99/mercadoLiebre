@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --grisOscuro: #666;
+  --grisClaro: #ebebeb;
+  --verde: #39b54a;
+}
+/*Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px*/
+* {
+  box-sizing: border-box;
+  margin: 0 ;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
