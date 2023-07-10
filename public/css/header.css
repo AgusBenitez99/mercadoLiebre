@@ -11,7 +11,7 @@ body .home__header {
 .home__header form {
   margin-left: 10px;
 }
-.home__header div {
+.home__header--title  {
   margin: 10px;
 }
 .home__header div h4 {
@@ -19,7 +19,10 @@ body .home__header {
 }
 
 .home__header--menu {
-  margin-top: 20px;
+  display: none;
+}
+.home__header--links{
+  display: none;
 }
 .home__header--menu ul li a {
   margin-right: 5px;

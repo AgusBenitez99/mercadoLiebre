@@ -21,6 +21,11 @@ Descripciones: 16px*/
 body {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
+  background-color: var(--grisClaro);
+}
+span{
+  display: block;
+  font-size: 18px;
 }
 li {
     list-style: none;
@@ -30,3 +35,12 @@ a{
     color: black;
 
 }
+h2{
+
+  font-size: 24px;
+  margin: 10px 0;
+}
+h3{
+  font-size: 16px;
+}
+

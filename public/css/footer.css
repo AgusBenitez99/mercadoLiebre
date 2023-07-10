@@ -1,4 +1,7 @@
 /*FOOTER*/
+footer{
+    background-color: white;
+}
 footer section {
   text-align: center;
   margin: 0px 3em;
@@ -12,4 +15,5 @@ footer section article i {
 .copyright {
   margin-top: 3em;
   margin-left: 20px;
+  padding: 10px;
 }
