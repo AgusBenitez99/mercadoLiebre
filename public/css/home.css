@@ -1,0 +1,59 @@
+/*MAIN*/
+.home__main{
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.home__main section article h3{
+  display: none;
+  
+}
+.home__main section article {
+  background-color: white;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.home__main section article div {
+  width: 100%;
+  border-top: solid 2px #ebebeb;
+  padding: 15px;
+}
+.home__main section article div i{
+    color: var(--verde);
+    padding: 8px;
+   
+    border: solid 1px var(--verde);
+    font-size: 16px;
+    border-radius: 50%;
+}
+.home__main--descuento {
+    color: var(--verde);
+    font-size: 16px;
+}
+main section article img {
+  width: 100%;
+}
+.home__main section article h3{
+  padding: 15px;
+}
+@media (min-width: 481px) {
+  .home__main section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .home__main section article h3{
+    display: block;
+    
+  }
+}
+@media (min-width: 769px) {
+  .home__main section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .home__main section article h3{
+    display: block;
+    
+  }
+}
+
