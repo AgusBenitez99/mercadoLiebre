@@ -38,4 +38,22 @@ main section article img {
 .home__main section article h3{
   padding: 15px;
 }
+@media (min-width: 481px) {
+  .home__main section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .home__main section article h3{
+    display: block;
+    
+  }
+}
+@media (min-width: 769px) {
+  .home__main section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .home__main section article h3{
+    display: block;
+    
+  }
+}
 
