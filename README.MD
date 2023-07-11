@@ -6,3 +6,9 @@
 [Estructura](https://github.com/AgusBenitez99/mercadoLiebre/tree/structure)
 
 [Estilos](https://github.com/AgusBenitez99/mercadoLiebre/tree/styles)
+
+[Diseño adaptativo](https://github.com/AgusBenitez99/mercadoLiebre/tree/adaptiveDesign)
+
+[Staging](https://mercadoliebre-hwmw.onrender.com)
+
+
