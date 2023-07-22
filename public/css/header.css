@@ -1,22 +1,54 @@
 body .home__header {
   background-color: var(--amarillo);
   background-size: cover;
-  padding: 30px 5px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.home__header__encabezado {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  margin: 10px;
 }
 .home__header img {
-  width: 30%;
+  width: 50%;
   height: 50%;
-  margin: 10px;
-  margin-left: 1.5em;
 }
-.home__header form {
-  margin-left: 10px;
+.search-box {
+  display: flex;
+  position: relative;
+  width: 50%;
+  background: #fff;
+  align-items: center;
+  border-radius: 5px;
+  height: 30px;
+  padding: 10px;
+  overflow: hidden;
+}
+.search-box input {
+  flex: 1;
+  padding: 15px 0px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 10px;
+  width: 50%;
+}
+.search-box button i {
+  width: 50%;
+}
+.search-box button {
+  padding: 10px 0px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  cursor: pointer;
 }
 .home__header--title {
   margin: 10px;
 }
 .home__header div h4 {
-  margin-left: 20px;
+  text-align: center;
 }
 
 .home__header--menu {
@@ -25,9 +57,7 @@ body .home__header {
 .home__header--links {
   display: none;
 }
-.home__header--menu ul li a {
-  margin-right: 5px;
-}
+
 .home__header .burger-menu {
   text-align: center;
 }
@@ -37,21 +67,61 @@ body .home__header {
   border-radius: 15%;
   color: var(--grisClaro);
   font-size: 2em;
-  margin-bottom: 10px;
+  margin: 10px 0px;
 }
 
 @media (min-width: 481px) {
+  body .home__header {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .home__header__encabezado {
+    width: 60%;
+    margin: 0;
+    padding: 10px;
+    /* height: 100px; */
+    margin-top: 10px;
+  }
+  .home__header__encabezado img {
+    width: 100%;
+  }
+  .search-box {
+    margin-top: 10px;
+  }
   .home__header--title {
     text-align: center;
+    width: 40%;
+    margin: 0;
+    padding: 10px;
+    margin-top: 10px;
   }
-  .home__header nav {
-    margin: 8px;
+  .home__header--title h4 {
+    width: 100%;
+    margin-top: 15px;
+  }
+ 
+  .home__header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
   .home__header--links {
     display: block;
+    padding: 10px;
+  }
+  .home__header--links ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
   .home__header--menu {
     display: block;
+    padding: 10px;
+  }
+  .home__header--menu ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 
   .burger-menu {
