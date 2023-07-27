@@ -9,6 +9,10 @@
 
 [Diseño adaptativo](https://github.com/AgusBenitez99/mercadoLiebre/tree/adaptiveDesign)
 
+[Posicionamiento avanzado FlexBox](https://github.com/AgusBenitez99/mercadoLiebre/tree/flexBox)
+
+[Formularios](https://github.com/AgusBenitez99/mercadoLiebre/tree/forms)
+
 [Staging](https://mercadoliebre-hwmw.onrender.com)
 
 
