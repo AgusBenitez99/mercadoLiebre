@@ -1,5 +1,7 @@
-@import url(/css/general.css);
-@import url(/css/header.css);
-@import url(/css/footer.css);
-@import url(/css/home.css);
+@import './general.css';
+@import './header.css';
+@import './footer.css';
+@import './home.css';
+@import './common/index.css';
+@import './register.css';
 

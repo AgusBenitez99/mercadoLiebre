@@ -8,7 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/css/styles.css" />
-    <title>Mercado liebre</title>
+    <title>Registro</title>
   </head>
   <body>
     <header class="home__header">
@@ -38,7 +38,8 @@
         <nav class="home__header--menu">
           <ul>
             <li>
-              <a href="/register">Crea tu cuenta</a><i class="far fa-id-card"></i>
+              <a href="/register">Crea tu cuenta</a
+              ><i class="far fa-id-card"></i>
             </li>
             <li>
               <a href="/login">Ingresa</a
@@ -49,90 +50,33 @@
             </li>
           </ul>
         </nav>
-       </div> 
+      </div>
 
       <div class="burger-menu">
         <i class="fas fa-bars"></i>
       </div>
     </header>
-    <div class="home__banner">
-      <img src="/img/img-home-banner.jpg" alt="banner" width="100%" />
-    </div>
-    <main class="home__main">
-      <section>
-        <h2>Basado en tu última visita</h2>
-        <article>
-          <img src="/img/img-cafetera-moulinex.jpg" alt="" />
-          <div>
-            <i class="fas fa-truck"></i>
-            <span>$6.770</span>
-            <p class="home__main--descuento">40% OFF</p>
+    <main class="main__login">
+      <div class="main__form">
+        <h1 id="title">Ingresar</h1>
+        <form action="">
+          <div class="main__form__input-group">
+            <div class="main__form__input-field">
+              <i class="far fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="main__form__input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Contraseña" />
+              <i class="fa-regular fa-eye-slash"></i>
+            </div>
           </div>
-          <h3>Cafetera Moulinex</h3>
-        </article>
-        <article>
-          <img src="/img/img-macbook-pro-2019.jpg" alt="" />
-          <div>
-            <i class="fas fa-truck"></i>
-            <span>$230.000</span>
-            <p class="home__main--descuento">20% off</p>
+
+          <div class="primary__button">
+            <button id="signUp" type="submit">Registrarse</button>
           </div>
-          <h3>MacBook Pro 2019</h3>
-        </article>
-        <article>
-          <img src="/img/img-samsung-galaxy-s10.jpg" alt="" />
-          <div>
-            <i class="fas fa-truck"></i><span>$70.500</span>
-            <p class="home__main--descuento">10% off</p>
-          </div>
-          <h3>Samsung Galaxy S10</h3>
-        </article>
-        <article>
-          <img src="/img/img-tv-samsung-smart.jpg" alt="" />
-          <div>
-            <i class="fas fa-truck"></i>
-            <span>$23.200</span>
-            <p class="home__main--descuento">5% off</p>
-          </div>
-          <h3>SmartTv Samsung 43"</h3>
-        </article>
-      </section>
-      <section>
-        <h2>Ofertas</h2>
-        <article>
-          <img src="/img/img-cafetera-moulinex.jpg" alt="" />
-          <div>
-            <i class="fas fa-truck"></i><span>$6.770</span>
-            <p class="home__main--descuento">40% OFF</p>
-          </div>
-          <h3>Cafetera Moulinex</h3>
-        </article>
-        <article>
-          <img src="/img/img-macbook-pro-2019.jpg" alt="" />
-          <div>
-            <i class="fas fa-truck"></i><span>$230.000</span>
-            <p class="home__main--descuento">20% off</p>
-          </div>
-          <h3>MacBook Pro 2019</h3>
-        </article>
-        <article>
-          <img src="/img/img-samsung-galaxy-s10.jpg" alt="" />
-          <div>
-            <i class="fas fa-truck"></i> <span>$70.500</span>
-            <p class="home__main--descuento">10% off</p>
-          </div>
-          <h3>Samsung Galaxy S10</h3>
-        </article>
-        <article>
-          <img src="/img/img-tv-samsung-smart.jpg" alt="" />
-          <div>
-            <i class="fas fa-truck"></i>
-            <span>$23.200</span>
-            <p class="home__main--descuento">5% off</p>
-          </div>
-          <h3>SmartTv Samsung 43"</h3>
-        </article>
-      </section>
+        </form>
+      </div>
     </main>
     <footer>
       <section>
