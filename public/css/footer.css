@@ -17,3 +17,13 @@ footer section article i {
   margin-left: 20px;
   padding: 10px;
 }
+@media (min-width: 769px) {
+ footer section{
+  display: flex;
+  gap: 5em;
+ }
+ footer section article i:hover {
+  
+  color: var(--azul);
+}
+}

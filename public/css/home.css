@@ -64,9 +64,30 @@ main section article img {
     margin-bottom: 1.5em;
   }
   .home__main section article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
     width: 45%;
+    overflow: hidden;
+        transition: all 0.5s ease ;
   }
+  .home__main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .home__main section article i:hover {
+    animation: rotate 2s ease;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-90deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
   .home__main section article h3 {
     display: block;
   }
@@ -75,6 +96,7 @@ main section article img {
   .home__main section article {
     width: 20%;
   }
+
   .home__main section article h3 {
     display: block;
   }

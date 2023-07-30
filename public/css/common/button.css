@@ -16,4 +16,7 @@
     cursor: pointer;
     transition:  background 1s;
 }
+.primary__button button:hover{
+    background-color: #0022AA;
+}
 
