@@ -36,68 +36,89 @@ const controller = {
 	// Create - Form to create
 	create: (req, res) => {
 		// Do the magic
-		return res.render('product-create-form')
+		db.Category.findAll()
+		.then(categories=>{
+			return res.render('product-create-form',{categories})
+		}).catch(error=>console.log(error))
+		
 	},
 	
 	// Create -  Method to store
 	store: (req, res) => {
 		// Do the magic
-		const {name, price, description, discount, category} = req.body;
-		const product = {
-			id : products[products.length -1].id + 1,
+		const {name, price, description, discount, categoryId} = req.body;
+		
+		db.Product.create({
 			name : name.trim(),
-			price : +price,
-			discount : +discount,
-			category,
+			price ,
+			discount ,
+			categoryId,
 			description : description.trim(),
 			image : null
-		}
-		products.push(product)
+		}).then(product=>{
+			return res.redirect('/products')
+		}).catch(error=>console.log(error))
+		
+	
 
-		fs.writeFileSync(productsFilePath, JSON.stringify(products,null,3),)
+		
 
-		return res.redirect('/products')
+		
 	},
 
 	// Update - Form to edit
 	edit: (req, res) => {
 		// Do the magic
-		const product = products.find(product => product.id === +req.params.id)
-		return res.render('product-edit-form',{
-			...product
-		})
+		const categories=db.Category.findAll()
+		const product =db.Product.findByPk(req.params.id)
+		
+		Promise.all([categories,product])
+		.then(([categories,product])=>{
+			return res.render('product-edit-form',{
+				categories,
+				...product.dataValues
+			})
+		}).catch(error=>console.log(error))
+		
 	},
 	// Update - Method to update
 	update: (req, res) => {
 		// Do the magic
-		const {name, price, description, discount, category} = req.body;
+		const {name, price, description, discount, categoryId} = req.body;
 
-		const productModify = products.map(product =>{
+		db.Product.update(
+			{
+				name : name.trim(),
+				price ,
+				discount ,
+				categoryId,
+				description : description.trim(),
+				image : null
+			},{
+				where:{
+					id:req.params.id
+				}
+			}
+		).then(response=>{
+			console.log(response)
+			return res.redirect('/products/detail/'+ req.params.id)
+		}).catch(error=>console.log(error))
 
-			if (product.id === +req.params.id) {
-				product.name = name.trim()
-				product.price = +price
-				product.discount = +discount
-				product.category
-				product.description = description.trim()
-			}	
-
-			return product
-		})
-
-		fs.writeFileSync(productsFilePath, JSON.stringify(productModify,null,3),)
-
-		return res.redirect('/products')
+		
 	},
 
 	// Delete - Delete one product from DB
 	destroy : (req, res) => {
 		// Do the magic
-		const productsModify = products.filter(product => product.id !== +req.params.id )
+		db.Product.destroy({
+			where:{
+				id:req.params.id
+			}
+		}).then(response=>{
+			return res.redirect('/products')
+		}).catch(error=>console.log(error))
 
-		fs.writeFileSync(productsFilePath, JSON.stringify(productsModify,null,3),)
-
-		return res.redirect('/products')
+		
 	}
 };
 
